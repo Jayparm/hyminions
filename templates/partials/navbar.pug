@@ -1,0 +1,10 @@
+nav#myNav.navbar.navbar-default.navbar-expand-lg.navbar-dark: .container.my-1
+    a.navbar-brand(href='/'): img(src="/images/aotd.png" width="30" height="30" alt="")
+    a.navbar-brand(href='/') HyMinions
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#orderNav')
+        span.navbar-toggler-icon.navbar-light
+    .collapse.navbar-collapse#orderNav
+        ul.nav.navbar-nav.mr-auto
+            each link in navLinks
+                li.nav-item(class=(section == link.key ? 'active' : null)): a.nav-link(href=link.href)= link.label
+                
