@@ -401,6 +401,7 @@ var minions = [
     },{ //15
         name: "Cactus Minion",
         tierDelay : [27,27,25,25,23,23,21,21,18,18,15],
+        noDiamondSpreading: 1,
         products : [
             {
                 item : "Cactus",
